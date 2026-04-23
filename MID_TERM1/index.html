@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Countdown Timer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="container">
+    <h2>Countdown Timer</h2>
+
+    <input type="number" id="num" placeholder="Enter number">
+    <br>
+    <button onclick="startCountdown()">Start</button>
+
+    <div id="output"></div>
+</div>
+
+<script>
+function startCountdown() {
+    let n = document.getElementById("num").value;
+    let output = document.getElementById("output");
+
+    let i = n;
+
+    let interval = setInterval(function() {
+        if (i <= 0) {
+            output.innerHTML = "Done!";
+            clearInterval(interval);
+        } else {
+            output.innerHTML = i;
+            i--;
+        }
+    }, 1000);
+}
+</script>
+
+</body>
+</html>
