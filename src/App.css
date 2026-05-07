@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 body {
   margin: 0;
   padding: 0;
@@ -66,4 +67,19 @@ button:hover {
 
 .users ul {
   text-align: left;
+=======
+.container {
+  width: 300px;
+  margin: auto;
+  text-align: center;
+  padding: 20px;
+}
+
+.card {
+  background: #f2f2f2;
+  padding: 15px;
+  margin: 15px 0;
+  border-radius: 10px;
+  box-shadow: 2px 2px 8px gray;
+>>>>>>> 46b7580e5a034967459a9663024fd565ea302934
 }
